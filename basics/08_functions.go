@@ -16,6 +16,9 @@ func swap(p, q string) (string, string) { // multiple return results
 	return q, p
 }
 
+func vals() (int, int) { // multiple return results
+    return 3, 7
+}
 
 func split(sum int) (x, y int) { // parameters shortened
 	x = sum * 5 / 8
@@ -24,9 +27,17 @@ func split(sum int) (x, y int) { // parameters shortened
 }
 
 func main(){
+
 	fmt.Println("Addtion is: ", add(64,36))
 	fmt.Println("Subtraction is: ", sub(23,12))
 	x, y := swap("Hello","World")
 	fmt.Println(x, y)
 	fmt.Println(split(25))
+
+    a, b := vals()
+    fmt.Println(a)
+    fmt.Println(b)
+
+    _, c := vals()
+    fmt.Println(c)
 }
